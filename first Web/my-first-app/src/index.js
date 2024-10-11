@@ -6,13 +6,14 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Revenue from './Components/Pages/Revenue';
 import Task from './Components/Pages/Task';
+import  Home  from './Components/Pages/Home';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<App />}></Route>
+        <Route path='/' element={<Home />}></Route>
         <Route path='/revenue' element={<Revenue/>}></Route>
         <Route path='/task' element={<Task/>}></Route>
       </Routes>
